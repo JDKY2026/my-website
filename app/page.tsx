@@ -1,3 +1,6 @@
+import ClothesSwapTool from './components/ClothesSwapTool';
+import FAQSection from './components/FAQSection';
+
 export default function Home() {
   return (
     <main className="min-h-screen" style={{background: 'linear-gradient(135deg, #dbeafe 0%, #ffffff 50%, #f3e8ff 100%)'}}>
@@ -86,60 +89,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <div className="text-center mb-6">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold">1</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Upload Your Photo</h3>
-                <p className="text-gray-600 text-sm">Choose a clear photo for the best results</p>
-              </div>
-              
-              <div className="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-blue-400 transition-colors cursor-pointer">
-                <div className="w-12 h-12 text-gray-400 mx-auto mb-3">📷</div>
-                <p className="text-gray-600 font-medium">Click to upload photo</p>
-                <p className="text-gray-400 text-sm">PNG, JPG up to 10MB</p>
-              </div>
-            </div>
+          <ClothesSwapTool />
 
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <div className="text-center mb-6">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold">2</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Choose Clothes</h3>
-                <p className="text-gray-600 text-sm">Upload clothing image or describe the outfit</p>
-              </div>
-
-              <div className="border-2 border-dashed border-gray-300 rounded-xl p-4 text-center hover:border-blue-400 transition-colors cursor-pointer">
-                <div className="w-8 h-8 text-gray-400 mx-auto mb-2">👕</div>
-                <p className="text-gray-600 text-sm font-medium">Upload clothes image</p>
-              </div>
-            </div>
-
-            <div className="rounded-2xl p-6" style={{background: 'linear-gradient(135deg, #dbeafe, #f3e8ff)'}}>
-              <div className="text-center mb-6">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold">3</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">AI Magic Happens</h3>
-                <p className="text-gray-600 text-sm">Watch as our AI creates your new look</p>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 border-2 border-blue-200 mb-6">
-                <div className="aspect-[3/4] rounded-lg flex items-center justify-center" style={{background: 'linear-gradient(135deg, #dbeafe, #f3e8ff)'}}>
-                  <div className="text-blue-500 text-4xl animate-pulse">✨</div>
-                </div>
-              </div>
-
-              <button className="btn-primary w-full">
-                ✨ Swap Clothes Now
-              </button>
-            </div>
-          </div>
-
-          <div className="text-center">
+          <div className="text-center mt-12">
             <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
               <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
               Completely Free • No Registration Required • Instant Results
@@ -212,6 +164,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
