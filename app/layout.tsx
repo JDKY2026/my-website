@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://aiclothesswapper.com'),
   title: 'AI Clothes Swapper - Free Online Virtual Try-On Tool | Swap Outfits Instantly',
   description: 'Transform your photos with our advanced AI clothes swapper. Try on different outfits virtually, perfect for fashion enthusiasts, e-commerce, and social media. Free online AI clothes changer with realistic results.',
   keywords: 'ai clothes swapper, virtual try on, clothes changer, ai fashion, outfit swap, virtual clothing, ai clothes changer, fashion ai, online clothes swap, virtual wardrobe',
